@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta Cinematográfica</title>
 </head>
+<style type="text/css">
+    body {
+        background: #c49208;
+        background-image: linear-gradient(to left, rgba(184, 155, 25, 0.233), #cac8c8);
+    }
+</style>
 <body>
     <div id="Contenedor">
-        <h2>Encuesta de cine: Nominadas al Oscar 2018</h2>
+        <h2 align="center"><i>Encuesta de Cine: Nominadas al Oscar 2018</u></h2>
         <form id="formulario1" name="formulario1" method="post" action="data.php">
             <fieldset id="datos_personales">
                 <legend>Datos Personales</legend>
@@ -32,9 +38,22 @@
 
             <fieldset id="mejor_pelicula">
                 <legend>Mejor Película</legend>
+                <img align= "center" src="img/premios_oscar_2.jpeg" alt="Premios Oscar" title="¡Oscar 2018!">
+                <br><br>
                 <input type="radio" name="pelicula" value="11">Call Me By Your Name<br>
                 <input type="radio" name="pelicula" value="22">Dunkerque<br>
                 <input type="radio" name="pelicula" value="33">Déjame salir<br>
+            </fieldset>
+
+            <fieldset id="pelicula_novista">
+                <legend>Selecciona las películas que no hayas visto</legend>
+                <img align= "center" src="img/oscar-960x720.jpg" alt="Premios Oscar" title="Oscar 2018">
+                <br><br>
+                <input type="checkbox" name="pelicula" value="11">El instante más oscuro<br>
+                <input type="checkbox" name="pelicula" value="22">Lady Bird<br>
+                <input type="checkbox" name="pelicula" value="33">El hilo invisible<br>
+                <input type="checkbox" name="pelicula" value="44">Los archivos del Pentágono<br>
+                <input type="checkbox" name="pelicula" value="55">La forma del agua<br>
             </fieldset>
 
             <fieldset id="grupo_argumento">
